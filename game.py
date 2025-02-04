@@ -67,7 +67,7 @@ def draw_grid(screen, grid, ants, phers):
     for (x, y), (pher_type, decay_time) in phers.items(): ##draw colored pher squares
         pher_color = PHER_RED if pher_type == "A" else PHER_BLUE
         pygame.draw.rect(screen, pher_color, (x * SQUARE_SIZE, y * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
-    for ant in ants: ##maut aagyi bc
+    for ant in ants: ##maut aagyi 
         ## directional triangles plotted, ant ko represent krne k liye.
         x_pos = ant.x * SQUARE_SIZE + SQUARE_SIZE // 2
         y_pos = ant.y * SQUARE_SIZE + SQUARE_SIZE // 2
@@ -127,5 +127,5 @@ def main():
 if __name__ == "__main__":
     main()
 
-##lund bc sab chaotic hora, no highway formation after long time, but behaviour
-##and game logic looks to be correct, ants are behaving as per the given rules (or my interpretation of the rules)
+## sab chaotic hora, no highway formation after long time, but behaviour
+## and game logic looks to be correct, ants are behaving as per the given rules (or my interpretation of the rules)
